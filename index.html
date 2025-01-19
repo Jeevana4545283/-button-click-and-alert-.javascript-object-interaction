@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            js objects
+        </title>
+    </head>
+</html>
+<body>
+    <p id="demo"></p>
+    <button id="clickme">click me</button>
+    <script>
+        let user={
+            name:"jeevana",
+            age:18
+        };
+        function sayHi(){
+        
+            alert("hello!");
+
+        }
+        user.message=sayHi;
+        document.getElementById("demo").innerHTML="hi "+""+user.name;
+        document.getElementById("clickme").onclick=user.message;
+    </script>
+</body>  
